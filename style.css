@@ -1,0 +1,524 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url('parallax1.jpg');
+    background-size: cover;
+    opacity: 0.9;
+    height: 80vh;
+    background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    width: 100%;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    color: #777777;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul a:hover {
+    background-color: rgba(154, 149, 149, 0.7);
+    color: black;
+}
+
+nav .search a:hover {
+    background-color: red;
+    color: white;
+}
+
+.logo {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    background-color: black;
+    letter-spacing: 5px;
+    word-spacing: 8px;
+    animation-name: logo;
+    opacity: 0.8;
+    animation-duration: 1s;
+    padding: 30px;
+    color: white;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes logo {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.8;
+    }
+}
+
+.about {
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 0px 20px;
+    width: 80%;
+    opacity: 1;
+    color: gray;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 40px;
+}
+
+.about p {
+    font-size: 20px;
+    padding: 20px 0px;
+}
+
+.para {
+    text-align: justify;
+}
+
+.about-me {
+    margin-top: 50px;
+    width: 100%;
+    padding: 0px 10px;
+    display: flex;
+}
+
+.about-me-image {
+    width: 50%;
+}
+
+.about-me-image span i {
+    margin-right: 20px;
+}
+
+.about-me-image span {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 40px;
+    display: block;
+}
+
+.about-me-image img {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    opacity: 0.7;
+}
+
+.about-me-image img:hover {
+    opacity: 1;
+}
+
+.about-me-text {
+    width: 50%;
+    padding: 0px 50px;
+    text-align: left;
+    line-height: 33px;
+}
+
+.about-me-text p {
+    font-size: 17px;
+}
+
+.good-at {
+    margin-top: 80px;
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.good-at h2 {
+    margin-bottom: 60px;
+    font-size: 40px;
+
+}
+
+.good-at p {
+    letter-spacing: 5px;
+    margin: 20px 0px auto;
+    text-align: left;
+}
+
+.score {
+    width: 100%;
+    background-color: rgb(181, 179, 179);
+}
+
+.score-number {
+    width: 85%;
+    background-color: rgb(57, 52, 52);
+    color: white;
+    padding: 5px;
+}
+
+.width-75 {
+    width: 75%;
+}
+
+.width-70 {
+    width: 70%;
+}
+
+.portfolio {
+    margin-top: 100px;
+    width: 100%;
+    background-image: url('parallax2.jpg');
+
+}
+
+.data {
+    padding: 40px 50px;
+    background-color: rgb(101, 100, 100);
+    color: white;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.data span h4 {
+    font-size: 40px;
+}
+
+.portfolio h1 {
+    padding: 180px;
+    text-align: center;
+    color: white;
+    letter-spacing: 9px;
+    font-size: 50px;
+}
+
+.myWork {
+    margin: 0 auto;
+    margin-top: 70px;
+    text-align: center;
+    width: 80%;
+    padding: 0px 20px;
+    color: gray;
+}
+
+.myWork h1 {
+    padding-bottom: 20px;
+}
+
+.myWork p {
+    margin-bottom: 50px;
+}
+
+.work-image {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+.work-image img {
+    width: 25%;
+    padding: 10px;
+}
+
+.work-image img:hover {
+    opacity: 0.7;
+}
+
+.myWork button {
+    border: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    font-size: 20px;
+    background-color: rgb(232, 229, 229);
+}
+
+.myWork button:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+.contact {
+    background-image: url('parallax3.jpg');
+    text-align: center;
+    padding: 17%;
+    height: 300px;
+    background-repeat: no-repeat;
+    color: white;
+    letter-spacing: 15px;
+    background-size: cover;
+    font-size: 30px;
+}
+
+.contact-details {
+    color: gray;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.contact-details h2 {
+    padding: 10px 0px;
+}
+
+.contact-location {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.contact-location img {
+    width: 35%;
+    float: left;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+
+.form {
+    width: 100%;
+    color: gray;
+    font-size: 20px;
+    padding: 0px 20px;
+    height: 300px;
+}
+
+.form p {
+    margin-top: 50px;
+}
+
+.name-email input {
+    padding: 10px;
+    margin-top: 20px;
+    width: 28%;
+    margin-left: 20px;
+    float: left;
+}
+
+.msg {
+    padding: 10px;
+    width: 60%;
+    float: right;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.msg input {
+    width: 100%;
+    padding: 10px;
+}
+
+.msg button {
+    margin-top: 40px;
+    float: right;
+    padding: 14px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+.msg button:hover {
+    background-color: rgb(224, 221, 221);
+    color: black;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    margin-top: 100px;
+    text-align:center;
+    color: white;
+    padding: 50px;
+    font-size: 20px;
+    background-color: rgb(127, 122, 122);
+}
+
+footer:hover {
+    background-color: black;
+}
+.social-media i {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.social-media i:hover {
+    color: rgb(189, 187, 187);
+}
+.social-media {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.social-media p {
+    padding-top: 30px;
+}
+
+footer button {
+    padding: 18px 12px;
+    font-size: 15px;
+    border: none;
+}
+
+footer button i {
+    margin-right: 10px;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (max-width:400px) {
+ 
+header {
+    height: 50vh;
+}
+
+nav ul {
+    flex-direction: column;
+}
+
+nav .search  {
+   display: none;
+}
+
+nav a:first-child {
+    display: block;
+}
+nav a {
+    display: none;
+}
+.logo {
+    top: 30%;
+}
+   
+.about {
+    margin-top: 50px;
+    padding: 0px 10px;
+    width: 100%;
+}
+
+.about-me {
+    flex-direction: column;
+}
+
+.about-me-image {
+    width: 100%;
+}
+
+
+.about-me-text {
+    width: 100%;
+    padding: 0px 10px;
+    line-height: auto;
+}
+
+.about-me-text p {
+    font-size:20px;
+}
+
+
+.good-at {
+    margin-top: 40px;
+    padding: 0px 10px;
+}
+
+.portfolio {
+    margin-top: 50px;
+}
+
+.data {
+    flex-direction: column;
+    text-align: center;
+}
+
+.data span h4 {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.portfolio h1 {
+    padding: 120px;
+    text-align: center;
+    color: white;
+    letter-spacing: 9px;
+    font-size: 25px;
+}
+
+.myWork {
+    width: 100%;
+    padding: 0px 10px;
+}
+
+
+.work-image {
+    width: 100%;
+    flex-direction: column;
+}
+
+.work-image img {
+    width: 100%;
+    padding: 10px;
+}
+
+.contact {
+    padding: 17% 0%;
+    height: 200px;
+    font-size: 25px;
+}
+
+.contact-location {
+    width: 100%;
+}
+
+.contact-location img {
+    width: 100%;
+}
+
+.form {
+    width: 100%;
+    color: gray;
+    font-size: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    height: 200px;
+}
+
+.name-email input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.msg {
+    padding:20px;
+    width: 100%;
+}
+
+.msg input {
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.msg button {
+    margin-top: 40px;
+    width: 100%;
+}
+
+footer {
+    margin-top:500px;
+}
+
+}
